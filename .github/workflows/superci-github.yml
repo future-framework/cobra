@@ -1,5 +1,5 @@
-# spf13/cobra's .github/workflows/test.yml: test-unix (platform: ubuntu, go: 24 -> 1.24.x), for the Superaction scoreboard.
-name: Superaction
+# spf13/cobra's .github/workflows/test.yml: test-unix (platform: ubuntu, go: 24 -> 1.24.x), for the SuperCI scoreboard.
+name: SuperCI (GitHub)
 
 on:
   workflow_dispatch: {}
@@ -12,8 +12,8 @@ permissions:
 
 jobs:
   test:
-    name: test / superaction-fabric
-    runs-on: superaction-fabric
+    name: test / github
+    runs-on: ubuntu-latest
     timeout-minutes: 30
     env:
       GO_TEST_FLAGS: ''
